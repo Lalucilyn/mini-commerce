@@ -19,5 +19,4 @@ It was bootstraped with create-react-app
 - Uploaded the first version. For now, I'm working on the front-end 
 - You can add / remove products from the cart and check out by clicking on the cart icon. 
 - You can also filter products by category
-- It's fully responsive and mobile first
-- Next tasks: add a response after checkout. Right now it just empties the cart and goes back to the main view. Add error handling. It will be essential when it's integrated whith an api. Add router.
+- Next tasks: make ir fully responsive. header and cart need layout adjustments on mobile devices. I Should add a response after checkout. Add error handling. Add router.
