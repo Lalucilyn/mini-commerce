@@ -1,0 +1,95 @@
+.product-wrapper {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	background: white;
+	justify-content: space-between;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	text-align: center;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	position: relative;
+}
+
+.product-wrapper h3 {
+	margin-top:1rem;
+	font-size: 0.875rem;
+}
+.product-wrapper h6 {
+	color: white;
+	background: #d50000;
+	position: absolute;
+	top: -1rem;
+	right: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+}
+.product-wrapper p {
+	margin-top: 0.75rem;
+	font-size: 1rem;
+	color: black;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+}
+
+.product-wrapper figure,  {
+	width: 60%;
+	margin: 0 auto;
+	height: auto;
+}
+
+.product-wrapper figure img {
+	width: 100%;
+	height: auto;
+}
+
+.product-wrapper button {
+	margin-top: 0.5rem;
+	padding: 0.5rem;
+	background: white;
+	border: 1px solid #4bacb8;
+	background: #4bacb8;
+	border-radius: 0.45rem;
+	width: 100%;
+	font-size: 0.8125rem;
+	height: 2rem;
+	color: white;
+}
+
+.product-wrapper button:hover {
+	cursor: pointer;
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
+.spinner {
+	display: flex;
+	width: 100%;
+	height: 2rem;
+	align-items: center;
+	height: 2rem;
+	margin-top: 0.5rem;
+}
+
+.spinner button {
+	margin-top: 0;
+	cursor: pointer;
+	background: #4bacb8;
+	color: white;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+}
+
+.spinner span {
+	width: calc(100% - 4rem);
+	height: 100%;
+	line-height: 2rem;
+}
+
+@media all and (max-width: 480px) {
+	.product-wrapper button {
+		font-size: 0.5rem;
+	}
+}

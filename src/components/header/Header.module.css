@@ -1,0 +1,82 @@
+.app-header, .app-header div {
+	display: flex;
+	align-items: center;
+
+}
+
+.app-header {
+	position: relative;
+	background: white;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); 
+	justify-content: center;
+	flex-direction: column;
+	height: 7rem;
+}
+
+.app-header div, .app-header img {
+	height: 2rem;
+	margin-top: 2rem;
+}
+
+.app-header img {
+	margin-left: 1.5rem;
+	margin-top: 0;
+}
+
+.app-header h1 {
+	color: #00b2cc;
+	font-size: 1.25rem;
+	font-weight: normal;
+	margin-left: 0.5rem;
+	font-weight: bold;
+}
+
+.app-header div:last-child {
+	margin-right: 1rem;
+	font-size: 0.875rem;
+	justify-content: flex-end;
+	position: relative;
+}
+
+.app-header div:last-child span {
+	margin-top: 0.25rem;
+	margin-right: 0px;
+}
+
+.app-header div:last-child img {
+	width: 1.375rem;
+	height: auto;
+	margin-left: 0.5rem;
+}
+
+.cart span {
+	position: absolute;
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 50%;
+	background: #0070E0;
+	right: 0;
+	top:-0.25rem;
+	transform: translateX(50%) translateY(10%);
+	color: white;
+	font-size: 0.5rem;
+	padding: 0.125rem;
+	line-height: 0.75rem;
+	text-align: center;
+}
+ 
+@media screen and (min-width: 780px) {
+	.app-header {
+		flex-direction: row;
+		justify-content: space-between;
+		height: 4rem;
+		align-items: center		
+	}
+	
+	.app-header div {
+		margin-top: 0;
+	}
+}

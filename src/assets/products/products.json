@@ -1,0 +1,100 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "Zapatos bajos negros y rojos",
+			"category": "zapatos",
+			"price": 350,
+			"discount": 0,
+			"img": "shoe_1"			
+		},	
+		{
+			"id": 2,
+			"name": "Zapatos fucsia con detalle",
+			"category": "zapatos",
+			"price": 1450,
+			"discount": 0,
+			"img": "shoe_2"
+		},	
+		{
+			"id": 3,
+			"name": "Zapatos de fiesta",
+			"category": "zapatos",
+			"price": 250,
+			"discount": 0,
+			"img": "shoe_3"
+		},	
+		{
+			"id": 4,
+			"name": "Zapatos floreados",
+			"category": "zapatos",
+			"price": 320,
+			"discount": 0,
+			"img": "shoe_4"
+		},
+		{
+			"id": 5,
+			"name": "Sandalias",
+			"category": "zapatos",
+			"price": 150,
+			"discount": 25,
+			"img": "shoe_5"
+		},	
+		{
+			"id": 6,
+			"name": "Bandolera flores",
+			"category": "carteras",
+			"price": 100,
+			"discount": 0,
+			"img": "bag_1"
+		},	
+		{
+			"id": 7,
+			"name": "Mochila frutas",
+			"category": "carteras",
+			"price": 1250,
+			"discount": 50,
+			"img": "bag_2"
+		},	
+		{
+			"id": 8,
+			"name": "Mochila marrón" ,
+			"category": "carteras",
+			"price": 200,
+			"discount": 10,
+			"img": "bag_3"
+		},
+		{
+			"id": 9,
+			"name": "Collar manazana",
+			"category": "accesorios",
+			"price": 1250,
+			"discount": 50,
+			"img": "necklace_1"
+		},	
+		{
+			"id": 10,
+			"name": "Pin manzana" ,
+			"category": "accesorios",
+			"price": 120,
+			"discount": 0,
+			"img": "pin_1"
+		},	
+						{
+			"id": 11,
+			"name": "Collar papas fritas",
+			"category": "accesorios",
+			"price": 1250,
+			"discount": 0,
+			"img": "necklace_2"
+		},	
+		{
+			"id": 12,
+			"name": "Anillos hamburguesa",
+			"category": "accesorios",
+			"price": 2000,
+			"discount": 0,
+			"img": "ring_1"
+		}
+	]
+}

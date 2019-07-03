@@ -1,0 +1,48 @@
+.cart {
+padding-top: 7rem;
+margin: 0 1rem;
+}
+.cart .total {
+	width: calc(100% - 4rem);
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+
+.cart button {
+	padding: 1rem 0.5rem;
+	background: white;
+	border: 1px solid #4bacb8;
+	background: #4bacb8;
+	border-radius: 0.45rem;
+	font-size: 0.8125rem;
+	color: white;
+
+}
+
+.cart h6 {
+	padding: 1rem;
+	width: calc(100% - 4rem);
+	background: white;
+	border-radius: 0.5rem;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);	
+}
+
+.cart button:hover {
+	cursor: pointer;
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
+@media screen and (min-width: 780px) {
+	.cart {
+		padding-top: 4rem
+	}
+	.cart button {
+			width: 10%;
+	}
+}

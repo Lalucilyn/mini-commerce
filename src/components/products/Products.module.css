@@ -1,0 +1,28 @@
+.products-wrapper {
+	padding: 1rem;
+ padding-top: 4rem;
+}
+
+.products {
+ display: grid;
+ grid-gap: 0.75rem;
+ grid-template-columns: repeat(1, 1fr);
+}
+
+
+.loader {
+	text-align: center;
+}
+
+@media (min-width: 800px) {
+	.products {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1200px) {
+	.products {
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 2rem;
+	}
+}
