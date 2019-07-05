@@ -9,7 +9,7 @@ function App() {
  const [totalProducts, setTotalProducts] = useState(products)
  const [shoppingCart, setShoppingCart] = useState(getCartFromStorage ? JSON.parse(getCartFromStorage) : []);
  const [checkout, setCheckout] = useState(false)
-
+ const [showThankyou, setShowThankyou] = useState(false)
 // Add product to cart
  const handleProductAdd = (product) => {
   let cartCopy = [...shoppingCart];
@@ -43,13 +43,14 @@ function App() {
 // Open the shopping cart (hide the products)
  const openCheckout = () => {
   setCheckout(!checkout)
+  setShowThankyou(false)
  }
 
 // Empty the cart (pending: a thank you message)
  const confirmPurchase = () => {
   setShoppingCart([])
   saveCartOnLocalStorage([])
-  setCheckout(false)
+  setShowThankyou(true)
   setTotalProducts(products)
  }
 
@@ -63,7 +64,7 @@ function App() {
         addProduct={handleProductAdd} 
         removeProduct={handleProductRemove}
     />:
-    <Cart cart={shoppingCart} confirm={confirmPurchase}/>
+    <Cart cart={shoppingCart} confirm={confirmPurchase} showThankyou={showThankyou}/>
   }
   </div>
  );

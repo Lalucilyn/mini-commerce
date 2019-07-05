@@ -1,16 +1,19 @@
-import React, {useState} from 'react';
+import React from 'react';
+// reminder to reimport useState when you fix the hover
 import styles from './Product.module.css';
 
 function Product (props) {
- const [hover, setHover] = useState(false)
+ // const [hover, setHover] = useState(false)
  const isTheProductAlreadyOnTheCart = props.quantity;
- let pic = require(`../../assets/pictures/${props.product.img}_${hover ? '2': '1'}.jpg`)
- const handleHover = () => {
-  console.log(hover)
-  setHover(!hover)
- }
+ let pic = require(`../../assets/pictures/${props.product.img}_${1}.jpg`)
+
+  // Disabled until I change the images resolution. It looks wonky when it takes time to load
+ // const handleHover = () => {
+ //  setHover(!hover)
+ // }
+
  return (
-  <div className={styles['product-wrapper']} onMouseEnter={() => handleHover()} onMouseLeave={() =>handleHover()}>
+  <div className={styles['product-wrapper']}>
    {(props.product.discount !== 0) && <h6>- {props.product.discount}%</h6>}
    <figure>
     <img src={pic} alt={`foto-${props.product.name}`}/>

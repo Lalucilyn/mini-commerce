@@ -14,7 +14,7 @@ const cart = (props) => {
 				<button onClick={() => props.confirm()}>Confirmar</button>
 			</div>
 		</div>:
-		<h6>No hay productos en tu carrito de compras</h6>}
+		<h6>{props.showThankyou ? '¡Gracias por tu compra' : 'No hay productos en tu carrito de compras'}</h6>}
 	</div>)
 }
 
