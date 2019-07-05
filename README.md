@@ -1,5 +1,5 @@
 # Mini Commerce
-You can watch a demo of this project here: https://wainfeld-mini-commerce.now.sh/
+You can watch a demo of this project here: https://mini-commerce.now.sh
 
 ## Overview
 
